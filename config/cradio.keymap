@@ -19,12 +19,10 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
-
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        0_default_layer {
             bindings = <
 &kp Q       &kp W        &kp E       &kp R         &kp T        &kp Y        &kp U         &kp I       &kp O        &kp P
 &ht LGUI A  &ht LCTRL S  &ht LALT D  &ht LSHIFT F  &lt 5 G      &kp H        &ht RSHIFT J  &ht RALT K  &ht RCTRL L  &ht RGUI SEMICOLON
@@ -33,7 +31,7 @@
             >;
         };
 
-        num_layer {
+        1_num_layer {
             bindings = <
 &caps_word  &kp LEFT_BRACKET      &trans  &kp RIGHT_BRACKET      &kp BACKSPACE    &kp SLASH      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_9  &kp ASTERISK
 &trans      &kp LEFT_PARENTHESIS  &trans  &kp RIGHT_PARENTHESIS  &kp EQUAL        &kp PERIOD     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS
@@ -42,7 +40,7 @@
             >;
         };
 
-        symbol_layer {
+        2_symbol_layer {
             bindings = <
 &caps_word      &kp DOT       &kp ASTERISK     &kp AMPERSAND  &kp PLUS         &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3
 &kp COLON       &kp QUESTION  &kp EXCLAMATION  &kp SLASH      &kp PIPE         &trans      &kp BACKSPACE   &trans            &kp DELETE    &trans
@@ -51,7 +49,7 @@
             >;
         };
 
-        navigation_layer {
+        3_navigation_layer {
             bindings = <
 &caps_word  &trans     &trans     &bootloader  &sys_reset         &trans      &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP
 &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)    &kp PRINTSCREEN    &caps_word  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
@@ -60,7 +58,7 @@
             >;
         };
 
-        bracket_layer {
+        4_bracket_layer {
             bindings = <
 &caps_word  &kp BACKSPACE         &trans                 &kp DELETE            &kp C_VOLUME_UP      &kp ASTERISK  &kp LEFT_BRACKET      &kp CARET   &kp RIGHT_BRACKET      &caps_word
 &kp LGUI    &kp LCTRL             &kp LALT               &kp LSHIFT            &kp C_MUTE           &kp QUESTION  &kp LEFT_PARENTHESIS  &kp DOLLAR  &kp RIGHT_PARENTHESIS  &trans
@@ -69,7 +67,7 @@
             >;
         };
 
-        function_layer {
+        5_function_layer {
             bindings = <
 &caps_word  &trans  &trans  &trans  &trans    &sys_reset   &kp F4  &kp F5  &kp F9  &kp F12
 &trans      &trans  &trans  &trans  &trans    &bootloader  &kp F1  &kp F2  &kp F3  &kp F11
