@@ -28,12 +28,21 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        bracket_layer {
             bindings = <
-                &kp Q       &kp W        &kp E       &kp R         &kp T        &kp Y        &kp U         &kp I       &kp O        &kp P
-                &ht LGUI A  &ht LCTRL S  &ht LALT D  &ht LSHIFT F  &kp G        &kp H        &ht RSHIFT J  &ht RALT K  &ht RCTRL L  &ht RGUI SEMICOLON
-                &kp Z       &kp X        &kp C       &kp V         &kp B        &kp N        &kp M         &kp COMMA   &kp DOT      &kp SINGLE_QUOTE
-                                                     &lt 4 MINUS   &lt 1 TAB    &lt 3 ENTER  &lt 2 SPACE
+                &caps_word  &kp BACKSPACE         &trans                 &kp DELETE            &kp C_VOLUME_UP      &kp ASTERISK  &kp LEFT_BRACKET      &kp CARET   &kp RIGHT_BRACKET      &caps_word
+                &kp LGUI    &kp LCTRL             &kp LALT               &kp LSHIFT            &kp C_MUTE           &kp QUESTION  &kp LEFT_PARENTHESIS  &kp DOLLAR  &kp RIGHT_PARENTHESIS  &trans
+                &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_AUTO  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN    &kp PIPE      &kp LEFT_BRACE        &kp HASH    &kp RIGHT_BRACE        &trans
+                                                                         &trans                &trans               &kp ENTER     &kp BACKSLASH
+            >;
+        };
+
+        navigation_layer {
+            bindings = <
+                &caps_word  &trans     &trans     &bootloader  &sys_reset         &trans      &kp F4  &kp F5  &kp F9  &kp F12
+                &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)    &kp PRINTSCREEN    &caps_word  &kp F1  &kp F2  &kp F3  &kp F11
+                &trans      &kp LC(U)  &kp LC(D)  &trans       &trans             &trans      &kp F8  &kp F6  &kp F7  &kp F10
+                                                  &kp INSERT   &kp DELETE         &trans      &trans
             >;
         };
 
@@ -55,22 +64,13 @@
             >;
         };
 
-        navigation_layer {
+        default_layer {
             bindings = <
-                &caps_word  &trans     &trans     &bootloader  &sys_reset         &trans      &kp F4  &kp F5  &kp F9  &kp F12
-                &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)    &kp PRINTSCREEN    &caps_word  &kp F1  &kp F2  &kp F3  &kp F11
-                &trans      &kp LC(U)  &kp LC(D)  &trans       &trans             &trans      &kp F8  &kp F6  &kp F7  &kp F10
-                                                  &kp INSERT   &kp DELETE         &trans      &trans
+                &kp Q       &kp W        &kp E       &kp R         &kp T        &kp Y        &kp U         &kp I       &kp O        &kp P
+                &ht LGUI A  &ht LCTRL S  &ht LALT D  &ht LSHIFT F  &kp G        &kp H        &ht RSHIFT J  &ht RALT K  &ht RCTRL L  &ht RGUI SEMICOLON
+                &kp Z       &kp X        &kp C       &kp V         &kp B        &kp N        &kp M         &kp COMMA   &kp DOT      &kp SINGLE_QUOTE
+                                                     &lt 4 MINUS   &lt 1 TAB    &lt 3 ENTER  &lt 2 SPACE
             >;
-        };
-
-        bracket_layer {
-            bindings = <
-                &caps_word  &kp BACKSPACE         &trans                 &kp DELETE            &kp C_VOLUME_UP      &kp ASTERISK  &kp LEFT_BRACKET      &kp CARET   &kp RIGHT_BRACKET      &caps_word
-                &kp LGUI    &kp LCTRL             &kp LALT               &kp LSHIFT            &kp C_MUTE           &kp QUESTION  &kp LEFT_PARENTHESIS  &kp DOLLAR  &kp RIGHT_PARENTHESIS  &trans
-                &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_AUTO  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN    &kp PIPE      &kp LEFT_BRACE        &kp HASH    &kp RIGHT_BRACE        &trans
-                                                                         &trans                &trans               &kp ENTER     &kp BACKSLASH
-            >;
-        };
+        };     
     };
 };
