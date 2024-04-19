@@ -56,10 +56,10 @@
 
         navigation_layer {
             bindings = <
-&caps_word    &kp HOME         &kp UP_ARROW    &kp END          &kp PAGE_UP      &caps_word  &kp F4  &kp F5  &kp F9  &kp F12
-&out OUT_BLE  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &trans      &kp F1  &kp F2  &kp F3  &kp F11
-&out OUT_USB  &kp PRINTSCREEN  &kp INSERT      &kp BACKSPACE    &kp DELETE       &trans      &kp F8  &kp F6  &kp F7  &kp F10
-                                               &trans           &trans           &trans      &trans
+&caps_word    &kp HOME         &kp UP_ARROW    &kp END          &kp PAGE_UP      &caps_word      &kp F4  &kp F5  &kp F9  &kp F12
+&out OUT_BLE  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &kp MINUS       &kp F1  &kp F2  &kp F3  &kp F11
+&out OUT_USB  &kp PRINTSCREEN  &kp INSERT      &kp BACKSPACE    &kp DELETE       &kp UNDERSCORE  &kp F8  &kp F6  &kp F7  &kp F10
+                                               &trans           &trans           &trans          &trans
             >;
         };
     };
