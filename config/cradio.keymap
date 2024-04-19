@@ -3,7 +3,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
@@ -33,7 +32,7 @@
 &kp Q       &kp W        &kp E       &kp R         &kp T        &kp Y        &kp U         &kp I       &kp O        &kp P
 &ht LGUI A  &ht LCTRL S  &ht LALT D  &ht LSHIFT F  &kp G        &kp H        &ht RSHIFT J  &ht RALT K  &ht RCTRL L  &ht RGUI SEMICOLON
 &kp Z       &kp X        &kp C       &kp V         &kp B        &kp N        &kp M         &kp COMMA   &kp DOT      &kp SINGLE_QUOTE
-                                     &kp MINUS     &lt 1 TAB    &lt 3 ENTER  &lt 2 SPACE
+                                     &kp ESCAPE    &lt 1 TAB    &lt 3 ENTER  &lt 2 SPACE
             >;
         };
 
@@ -57,10 +56,10 @@
 
         navigation_layer {
             bindings = <
-&caps_word    &kp HOME         &kp UP_ARROW    &kp END            &kp PAGE_UP      &caps_word      &kp F4  &kp F5  &kp F9  &kp F12
-&out OUT_BLE  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp PAGE_DOWN    &kp MINUS       &kp F1  &kp F2  &kp F3  &kp F11
-&out OUT_USB  &kp PRINTSCREEN  &kp INSERT      &kp BACKSPACE      &kp DELETE       &kp UNDERSCORE  &kp F8  &kp F6  &kp F7  &kp F10
-                                               &ext_power EP_TOG  &trans           &trans          &trans
+&caps_word    &kp HOME         &kp UP_ARROW    &kp END          &kp PAGE_UP      &caps_word      &kp F4  &kp F5  &kp F9  &kp F12
+&out OUT_BLE  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &kp MINUS       &kp F1  &kp F2  &kp F3  &kp F11
+&out OUT_USB  &kp PRINTSCREEN  &kp INSERT      &kp BACKSPACE    &kp DELETE       &kp UNDERSCORE  &kp F8  &kp F6  &kp F7  &kp F10
+                                               &trans           &trans           &trans          &trans
             >;
         };
     };
