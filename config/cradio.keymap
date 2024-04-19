@@ -32,7 +32,7 @@
 &kp Q       &kp W        &kp E       &kp R         &kp T        &kp Y        &kp U         &kp I       &kp O        &kp P
 &ht LGUI A  &ht LCTRL S  &ht LALT D  &ht LSHIFT F  &kp G        &kp H        &ht RSHIFT J  &ht RALT K  &ht RCTRL L  &ht RGUI SEMICOLON
 &kp Z       &kp X        &kp C       &kp V         &kp B        &kp N        &kp M         &kp COMMA   &kp DOT      &kp SINGLE_QUOTE
-                                     &lt 4 MINUS   &lt 1 TAB    &lt 3 ENTER  &lt 2 SPACE
+                                     &kp MINUS     &lt 1 TAB    &lt 3 ENTER  &lt 2 SPACE
             >;
         };
 
@@ -56,19 +56,10 @@
 
         navigation_layer {
             bindings = <
-&caps_word  &kp HOME         &kp UP_ARROW    &kp END          &kp PAGE_UP      &caps_word  &kp F4  &kp F5  &kp F9  &kp F12
-&trans      &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &trans      &kp F1  &kp F2  &kp F3  &kp F11
-&trans      &kp PRINTSCREEN  &kp INSERT      &kp BACKSPACE    &kp DELETE       &trans      &kp F8  &kp F6  &kp F7  &kp F10
-                                             &trans           &trans           &trans      &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&caps_word  &trans         &trans      &out OUT_BLE  &out OUT_USB    &kp ASTERISK  &kp LEFT_BRACKET      &kp CARET   &kp RIGHT_BRACKET      &caps_word
-&trans      &kp BACKSPACE  &kp ESCAPE  &kp DELETE    &trans          &kp QUESTION  &kp LEFT_PARENTHESIS  &kp DOLLAR  &kp RIGHT_PARENTHESIS  &kp EQUAL
-&trans      &trans         &trans      &trans        &trans          &kp PIPE      &kp LEFT_BRACE        &kp HASH    &kp RIGHT_BRACE        &trans
-                                       &trans        &trans          &trans        &trans
+&caps_word    &kp HOME         &kp UP_ARROW    &kp END          &kp PAGE_UP      &caps_word  &kp F4  &kp F5  &kp F9  &kp F12
+&out OUT_BLE  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &trans      &kp F1  &kp F2  &kp F3  &kp F11
+&out OUT_USB  &kp PRINTSCREEN  &kp INSERT      &kp BACKSPACE    &kp DELETE       &trans      &kp F8  &kp F6  &kp F7  &kp F10
+                                               &trans           &trans           &trans      &trans
             >;
         };
     };
