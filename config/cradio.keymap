@@ -25,7 +25,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "ESCAPE_ON_DOUBLE_TAP";
             #binding-cells = <0>;
-            bindings = <&kp ENTER>, <&kp ESCAPE>;
+            bindings = <&kp UNDER>, <&kp ESCAPE>;
         };
     };
 };
@@ -36,10 +36,10 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp W        &kp E       &kp R         &kp T        &kp Y  &kp U         &kp I       &kp O        &kp P
-&ht LGUI A  &ht LCTRL S  &ht LALT D  &ht LSHIFT F  &kp G        &kp H  &ht RSHIFT J  &ht RALT K  &ht RCTRL L  &ht RGUI SEMICOLON
-&kp Z       &kp X        &kp C       &kp V         &kp B        &kp N  &kp M         &kp COMMA   &kp DOT      &kp SINGLE_QUOTE
-                                     &lt 1 UNDER   &lt 2 TAB    &dt    &lt 3 SPACE
+&kp Q       &kp W        &kp E       &kp R         &kp T        &kp Y        &kp U         &kp I       &kp O        &kp P
+&ht LGUI A  &ht LCTRL S  &ht LALT D  &ht LSHIFT F  &kp G        &kp H        &ht RSHIFT J  &ht RALT K  &ht RCTRL L  &ht RGUI SEMICOLON
+&kp Z       &kp X        &kp C       &kp V         &kp B        &kp N        &kp M         &kp COMMA   &kp DOT      &kp SINGLE_QUOTE
+                                     &dt           &lt 1 TAB    &lt 2 ENTER  &lt 3 SPACE
             >;
         };
 
