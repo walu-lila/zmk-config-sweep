@@ -21,7 +21,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        escape_on_double_tap: escape_on_double_tap {
+        dt: escape_on_double_tap {
             compatible = "zmk,behavior-tap-dance";
             label = "ESCAPE_ON_DOUBLE_TAP";
             #binding-cells = <0>;
@@ -36,10 +36,10 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp W        &kp E       &kp R         &kp T        &kp Y                  &kp U         &kp I       &kp O        &kp P
-&ht LGUI A  &ht LCTRL S  &ht LALT D  &ht LSHIFT F  &kp G        &kp H                  &ht RSHIFT J  &ht RALT K  &ht RCTRL L  &ht RGUI SEMICOLON
-&kp Z       &kp X        &kp C       &kp V         &kp B        &kp N                  &kp M         &kp COMMA   &kp DOT      &kp SINGLE_QUOTE
-                                     &lt 3 UNDER   &lt 1 TAB    &escape_on_double_tap  &lt 2 SPACE
+&kp Q       &kp W        &kp E       &kp R         &kp T        &kp Y  &kp U         &kp I       &kp O        &kp P
+&ht LGUI A  &ht LCTRL S  &ht LALT D  &ht LSHIFT F  &kp G        &kp H  &ht RSHIFT J  &ht RALT K  &ht RCTRL L  &ht RGUI SEMICOLON
+&kp Z       &kp X        &kp C       &kp V         &kp B        &kp N  &kp M         &kp COMMA   &kp DOT      &kp SINGLE_QUOTE
+                                     &lt 1 UNDER   &lt 2 TAB    &dt    &lt 3 SPACE
             >;
         };
 
@@ -52,21 +52,21 @@
             >;
         };
 
-        symbol_layer {
-            bindings = <
-&caps_word      &kp DOT       &kp ASTERISK     &kp AMPERSAND  &kp PLUS         &kp HOME        &kp PAGE_UP    &kp PAGE_DOWN   &kp END          &caps_word
-&kp COLON       &kp QUESTION  &kp EXCLAMATION  &kp SLASH      &kp PIPE         &kp LEFT_ARROW  &kp UP_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ESCAPE
-&kp UNDERSCORE  &kp GRAVE     &kp TILDE        &kp PERCENT    &kp AT_SIGN      &trans          &kp BACKSPACE  &trans          &kp DELETE       &trans
-                                               &kp EQUAL      &kp BACKSLASH    &trans          &trans
-            >;
-        };
-
         navigation_layer {
             bindings = <
 &caps_word  &kp PRINTSCREEN  &kp INSERT    &trans        &bt BT_SEL 4    &caps_word      &kp F4        &kp F5  &kp F9  &kp F12
 &bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &kp MINUS       &kp F1        &kp F2  &kp F3  &kp F11
 &trans      &kp BACKSPACE    &trans        &kp DELETE    &trans          &kp UNDERSCORE  &kp F8        &kp F6  &kp F7  &kp F10
                                            &trans        &trans          &out OUT_USB    &out OUT_BLE
+            >;
+        };
+
+        symbol_layer {
+            bindings = <
+&caps_word      &kp DOT       &kp ASTERISK     &kp AMPERSAND  &kp PLUS         &kp HOME        &kp PAGE_UP    &kp PAGE_DOWN   &kp END          &caps_word
+&kp COLON       &kp QUESTION  &kp EXCLAMATION  &kp SLASH      &kp PIPE         &kp LEFT_ARROW  &kp UP_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ESCAPE
+&kp UNDERSCORE  &kp GRAVE     &kp TILDE        &kp PERCENT    &kp AT_SIGN      &trans          &kp BACKSPACE  &trans          &kp DELETE       &trans
+                                               &kp EQUAL      &kp BACKSLASH    &trans          &trans
             >;
         };
     };
